@@ -1,0 +1,368 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #383838;
+}
+header{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.container-fluid{
+    height: 70px;
+    line-height: 70px !Important;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+.top_nav{
+    height: 70px;
+    background-color: #191919;
+}
+ 
+#logo {
+    display: inline-block;
+    float: left;
+    height: 50px;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+h1{
+    display: inline;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+    color: #a5a5a5;
+    margin: 0 0 0 5%;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+    text-shadow: 2px 6px 4px rgba(0,0,0,0.2),
+                 0px -2px 35px rgba(255,255,255,0.3);
+}
+nav{
+    float: right;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+nav a{
+    text-decoration: none;
+    color: #a5a5a5;
+    font-size: 16px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
+}
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: #a5a5a5;
+    position: absolute;
+    bottom: 0;
+    transition: ease-in-out 200ms;
+}
+nav a:hover{
+    color: #727272
+}
+nav a:hover::before{
+    width: 100%;
+    color: #727272;
+}
+
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 890px;
+    -webkit-box-shadow: inset 0px 0px 23px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 23px 11px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 23px 11px rgba(0,0,0,0.75);
+    top: 80px;
+}
+
+.recent-work {
+    width: 100%;
+    height: 600px;
+}
+
+.recent-work h2{
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    color: #a5a5a5;
+    font-size: 30px;
+}
+/*slide show */
+ {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width:  100%;
+  max-height: 900px;
+  position: relative;
+  margin: auto;
+  clear: both;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #a5a5a5;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+    background-color: rgba(0,0,0,0.1)
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.burger-nav{
+    display: none
+}
+
+/* Gallery */
+.gallery-wrap{
+    width: 100%;
+    margin-top: 10px;
+}
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+.gallery-wrap > div{
+    display: inline-block;
+    width: 44%;
+    vertical-align: top;
+    
+	/* IE fix. */
+	*display: inline;
+	zoom: 1;
+}
+
+.gallery-wrap:after{
+	content: "";
+	width: 100%;
+	display: inline-block;
+
+}
+#myGallery li:hover{
+  opacity: .75;
+  border: solid rgb(155, 155, 155) 2px;
+}
+
+.wed-engageLnk, .portraitsLnk{
+    
+    margin-left: 3%;
+    text-decoration: none;
+    padding: 10px 10px 0 10px;
+}
+
+.wed-engageLnk:hover , .portraitsLnk:hover{
+    background-color: #191919;
+    text-decoration: none;
+}
+
+.wed-engageLnk img{
+    width: 100%;
+}
+
+.portraitsLnk img{
+    width: 100%;
+}
+
+.wed-engageLnk p , .portraitsLnk p {
+    text-align: center;
+    color: #a5a5a5;
+    font-size: 18px;
+    font-family: 'Cinzel', serif;
+    text-decoration: none;
+    margin: 5px 10px 5px 10px;
+}
+.gallery-wrap a {
+    text-decoration: none;
+}
+
+/*Gallery Page End */
+
+/* Media Queries */
+@media screen and (max-width: 1024px){
+    h1{
+        font-size: 20px;
+        padding: 0;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        height: 40px;
+    }
+    .burger-nav{
+        display: block;
+        height: 40px;
+        width: 100%;
+        background: url(images/burger.png) no-repeat 98% center;
+        background-color: #282828;
+        cursor: pointer;
+        margin: 0;
+        clear: left;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #404040
+    }
+    header nav ul{
+        overflow: hidden;
+        background-color: #282828;
+        height: 0;
+    }
+    header nav ul.open{
+        height: auto;
+    }
+    
+    header nav ul li{
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #404040;
+    }
+    
+    header nav ul li a{
+        font-size: 14px;
+        padding: 0px;
+        display: block;
+    }
+    
+    nav{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    
+    .recent-work h2{
+        font-size: 16px;
+        margin: 10px 0 10px 0;
+    }
+    
+    /* Gallery Page */
+    .wed-engageLnk, .portraitsLnk{
+        margin: 0;
+    }
+    .gallery-wrap > div{
+        display: block;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gallery-wrap p{ 
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    
+    h1{
+        
+        font-size: 14px;
+    }
+    #logo{
+        height: 30px;
+        margin: auto;
+        padding-top: 26px;
+    }
+    .recent-work h2{
+        font-size: 14px;!important
+    }
+
+}
+

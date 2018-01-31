@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Chance Lindquist Photography</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!--<script src="Slideshow.js"></script> -->
+        <link href="https://fonts.googleapis.com/css?family=Cinzel:700" rel="stylesheet">
+        <link rel="stylesheet" href="thumbnail-slider.css">
+        <script src="thumbnail-slider.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header class="top_nav" id="mainNav">
+            <div class="container-fluid">
+                <img src="images/CL%20Photography%20Logo.png" id="logo">
+                <h1>Chance Lindquist Photography</h1>
+                <nav>
+                    <a class="burger-nav"></a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+
+        </header>
+        
+        
+        <!-- Burger Nav Script -->
+        
+        <script src="jquery-1.11.3.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                  $(".burger-nav").on("click", function(){
+                      
+                      $("header nav ul").toggleClass("open");
+                  });
+                  });
+        </script>
+    </body>
